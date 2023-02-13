@@ -18,4 +18,5 @@ jobs:
         server: sftp.domeneshop.no
         username: dagarfra
         password: ${{ secrets.ftp_passord }}
-        server-dir: www
+        server-dir: www/
+        port: 21
