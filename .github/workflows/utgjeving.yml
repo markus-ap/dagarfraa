@@ -4,7 +4,8 @@ on:
       - hovud
     paths:
       include:
-        - kjelde/**
+        - 'kjelde/**'
+        - '.github/workflow/**'
 
 name: 
 jobs:
