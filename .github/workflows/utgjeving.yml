@@ -15,7 +15,7 @@ jobs:
     - name: 📂 Synkronisér filar
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: sftp.domeneshop.no
+        server: ftp.domeneshop.no
         username: dagarfra
         password: ${{ secrets.ftp_passord }}
         server-dir: www/
