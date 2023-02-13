@@ -21,3 +21,4 @@ jobs:
         server-dir: www/
         local-dir: ./kjelde/
         port: 21
+        dangerous-clean-slate: true
