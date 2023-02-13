@@ -3,9 +3,8 @@ on:
     branches:
       - hovud
     paths:
-      include:
-        - 'kjelde/**'
-        - '.github/workflow/**'
+      - 'kjelde/**'
+      - '.github/workflow/**'
 
 name: 
 jobs:
