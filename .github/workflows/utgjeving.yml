@@ -19,5 +19,5 @@ jobs:
         username: dagarfra
         password: ${{ secrets.ftp_passord }}
         server-dir: www/
-        local-dir: kjelde/
+        local-dir: ./kjelde/
         port: 21
