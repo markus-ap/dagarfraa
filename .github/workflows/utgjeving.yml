@@ -2,6 +2,9 @@ on:
   push:
     branches:
       - hovud
+    paths:
+      include:
+        - kjelde/**
 
 name: 
 jobs:
