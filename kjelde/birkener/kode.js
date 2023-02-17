@@ -28,69 +28,14 @@ function updateCountdown() {
 
   // Display the time remaining
   var p = document.getElementById("tid");
-  p.innerHTML = days + " dagar, " + hours + " timar, " + minutes + " minutt, og " + seconds + " sekund";
-}
-
-async function fyll_film(){
-  const samenlikning = document.getElementById("samenlikning");
-  const film = tilfeldig_film()
-  let antall = Math.round(timeRemaining / filmlengde_i_sekund(film["timar"], film["minutt"]));
-
-  samenlikning.innerHTML = "På den tida kan du sjå " + film["tittel"] + " " + antall + " gongar!";
+  p.innerHTML = days + " dagar,</br>" + hours + " timar,</br>" + minutes + " minutt,</br>og " + seconds + " sekund";
 }
 
 async function fyll_gif(){
     const samenlikning = document.getElementById("samenlikning");
-    let gifUrl = await getRandomGif("surprised");
+    let gifUrl = await getRandomGif("skiing");
     samenlikning.innerHTML = "<img id='gif' src='" + gifUrl + "'>";
 }
-
-function tilfeldig_film(){
-    const filmar = [
-        {
-            "tittel": "Avengers: Endgame",
-            "timar": 3,
-            "minutt": 2,
-            "sekund": 0
-        },
-        {
-            "tittel": "Love Actually",
-            "timar": 2,
-            "minutt": 9,
-            "sekund": 0
-        },
-        {
-            "tittel": "Skyfall",
-            "timar": 2,
-            "minutt": 23,
-            "sekund": 0
-        },
-        {
-            "tittel": "Spider-Man (2002)",
-            "timar": 2,
-            "minutt": 1,
-            "sekund": 0
-        },
-        {
-            "tittel": "Max Manus",
-            "timar": 1,
-            "minutt": 58,
-            "sekund": 0
-        },
-        {
-            "tittel": "Avatar",
-            "timar": 2,
-            "minutt": 42,
-            "sekund": 0
-        }
-    ]
-    return filmar[Math.floor(Math.random() * filmar.length)];
-}
-
-function filmlengde_i_sekund(timar, minutt){
-    return (timar * 60 + minutt) * 60 * 1000;
-}
-
 
 async function getRandomGif(searchTerm) {
     // Build the API endpoint URL
