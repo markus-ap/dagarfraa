@@ -1,5 +1,4 @@
-# dagarfraa
+# Kor mange dagar frå no er det?
 [<img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=d00000">](https://github.com/SamKirkland/FTP-Deploy-Action)
 
-Nedtelling til diverse greiar
-
+[dagarfrå.no](https://dagarfrå.no)
