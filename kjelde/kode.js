@@ -21,9 +21,9 @@ function updateCountdown() {
 function formatTimeToHtml(dagar, timar, minutt, sekund){
   var resultat = "";
   
-  if(dagar != 0) res += (dagar == 1) ? dagar + " dag,</br>" : dagar + " dagar,</br>";
-  res += (timar == 1) ? timar + " time,</br>" : timar + " timar,</br>";
-  res += minutt + " minutt og,</br>" + sekund + " sekund";
+  if(dagar != 0) resultat += (dagar == 1) ? dagar + " dag,</br>" : dagar + " dagar,</br>";
+  resultat += (timar == 1) ? timar + " time,</br>" : timar + " timar,</br>";
+  resultat += minutt + " minutt og,</br>" + sekund + " sekund";
   var p = document.getElementById("tid");
   
   p.innerHTML = resultat;
