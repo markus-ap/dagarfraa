@@ -1,4 +1,4 @@
-function updateCountdown(targetTime) {
+function updateCountdown() {
   // Calculate the time remaining
   timeRemaining = targetTime - Date.now();
 
@@ -33,7 +33,7 @@ function formatTimeToHtml(dagar, timar, minutt, sekund){
   return resultat
 }
 
-async function fyll_gif(søkeord){
+async function fyll_gif(){
     const samenlikning = document.getElementById("samenlikning");
     let gifUrl = await getRandomGif(søkeord);
     samenlikning.innerHTML = "<img id='gif' src='" + gifUrl + "'>";
