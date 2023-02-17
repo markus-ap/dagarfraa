@@ -12,13 +12,20 @@
   </head>
   <body>
     <div id="kropp">
+        <p> Om </p>
         <h1 id="tid">Kor mange dagar frå no er det?</h1>
+        <p> er det eitt nytt år! </p>
         <p id="samenlikning"></p>
     </div>
     <script>
-      const targetTime = new Date("January 1, 2024 00:00:00");
+      const no = new Date();
+      let år = no.getFullYear();
+      const targetTime = new Date("January 1, ${år} 00:00:00");
+      
       let timeRemaining = targetTime - Date.now();
       let søkeord = "fireworks";
+      updateCountdown();
+      fyll_gif();
       setInterval(updateCountdown, 1000);
       setInterval(fyll_gif, (1000*20));
     </script>
