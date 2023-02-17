@@ -19,7 +19,7 @@
     </div>
     <script>
       const no = new Date();
-      let år = no.getFullYear();
+      let år = no.getFullYear() + 1;
       const targetTime = new Date("January 1, ${år} 00:00:00");
       
       let timeRemaining = targetTime - Date.now();
