@@ -14,13 +14,8 @@ function updateCountdown() {
   const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-  // Display the time remaining
   
-  return (days, hours, minutes, seconds);
-  
-  var p = document.getElementById("tid");
-  p.innerHTML = days + " dagar,</br>" + hours + " timar,</br>" + minutes + " minutt,</br>og " + seconds + " sekund";
+  formatTimeToHtml(days, hours, minutes, seconds);
 }
 
 function formatTimeToHtml(dagar, timar, minutt, sekund){
@@ -29,8 +24,9 @@ function formatTimeToHtml(dagar, timar, minutt, sekund){
   if(dagar != 0) res += (dagar == 1) ? dagar + " dag,</br>" : dagar + " dagar,</br>";
   res += (timar == 1) ? timar + " time,</br>" : timar + " timar,</br>";
   res += minutt + " minutt og,</br>" + sekund + " sekund";
+  var p = document.getElementById("tid");
   
-  return resultat
+  p.innerHTML = resultat;
 }
 
 async function fyll_gif(){
