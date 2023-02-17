@@ -19,11 +19,10 @@
     </div>
     <script>
       const no = new Date();
-      let år = no.getFullYear() + 1;
-      const targetTime = new Date(`June 29 ${år} 23:10:00`);
+      const targetTime = new Date(`June 29 2023 23:10:00`);
       
       let timeRemaining = targetTime - Date.now();
-      let søkeord = "locomotive";
+      let søkeord = "train";
       updateCountdown();
       fyll_gif();
       setInterval(updateCountdown, 1000);
