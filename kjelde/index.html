@@ -15,5 +15,12 @@
         <h1 id="tid">Kor mange dagar frå no er det?</h1>
         <p id="samenlikning"></p>
     </div>
+    <script>
+      const targetTime = new Date("January 1, 2024 00:00:00");
+      let timeRemaining = targetTime - Date.now();
+      let søkeord = "fireworks";
+      setInterval(updateCountdown, 1000);
+      setInterval(fyll_gif, (1000*20));
+    </script>
   </body>
 </html>
