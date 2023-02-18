@@ -39,13 +39,15 @@
               break;
           }
       }
-      
-      document.getElementById("mcu").innerHTML = filmTittel;
 
       let timeRemaining = targetTime - Date.now();
      
       updateCountdown();
       fyll_gif();
+      
+      let ft = document.getElementById("mcu");
+      ft.innerHTML = filmTittel;
+
       setInterval(updateCountdown, 1000);
       setInterval(fyll_gif, (1000*60*2));
     </script>
