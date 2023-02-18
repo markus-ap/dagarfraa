@@ -22,8 +22,8 @@
       const no = new Date();
       const filmar = 
       [
-         { "dato": new Date("May 5th, 2023"), "tittel": "Guardians of the Galaxy Vol. 3", "gif" : "groot" },
-         { "dato": new Date("November 10th, 2023"), "tittel" : "The Marvels", "gif": "captain%20marvel"}
+         { "dato": new Date("May 5 2023"), "tittel": "Guardians of the Galaxy Vol. 3", "gif" : "groot" },
+         { "dato": new Date("November 10 2023"), "tittel" : "The Marvels", "gif": "captain%20marvel"}
       ];
 
       let targetTime = new Date();
@@ -31,6 +31,7 @@
       let søkeord = "mcu";
       for(let film of filmar)
       {
+          filmTittel = film["tittel"];
           if(film["dato"] > no)
           {
               targetTime = film["dato"];
