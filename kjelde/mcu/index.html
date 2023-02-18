@@ -27,7 +27,7 @@
       ];
 
       let targetTime = new Date();
-      let filmTittel = "";
+      let filmTittel = "neste film";
       let søkeord = "mcu";
       for(let film of filmar)
       {
@@ -45,7 +45,7 @@
       updateCountdown();
       fyll_gif();
       
-      let ft = document.getElementById("mcu");
+      var ft = document.getElementById("mcu");
       ft.innerHTML = filmTittel;
 
       setInterval(updateCountdown, 1000);
