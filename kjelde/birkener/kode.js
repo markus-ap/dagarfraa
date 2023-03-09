@@ -1,4 +1,4 @@
-const targetTime = new Date("March 18, 2023 09:30:00");  // Set the target time
+const targetTime = new Date("March 18, 2023 09:05:00");  // Set the target time
 let timeRemaining = targetTime - Date.now();  // Calculate the initial time remaining
 setInterval(updateCountdown, 1000);
 setInterval(fyll_gif, (1000*20))
