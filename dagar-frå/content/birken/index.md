@@ -2,6 +2,7 @@
 title: "Birken"
 date: 2023-03-12T16:10:24+01:00
 draft: false
+url: "/birken/"
 ---
 
 {{ partial "head/meta.html" . }}
