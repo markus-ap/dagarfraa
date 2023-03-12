@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neste MCU-film</title>
+    <script src="https://dagarfrå.no/kode.js"></script>
+    <link rel="stylesheet" href="https://dagarfrå.no/stilark.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+  <style>* { background-color: #a31d1d} </style>
+  <body>
+    <div id="kropp">
+        <p> Om </p>
+        <h1 id="tid"></h1>
+        <p>premierar <span id="mcu"></span>!</p>
+        <p id="samenlikning"></p>
+    </div>
+    <script>
+      const no = new Date();
+      const filmar = 
+      [
+         { "dato": new Date("May 5 2023"), "tittel": "Guardians of the Galaxy Vol. 3", "gif" : "groot" },
+         { "dato": new Date("November 10 2023"), "tittel" : "The Marvels", "gif": "captain%20marvel"}
+      ];
+
+      let targetTime = new Date();
+      let filmTittel = "neste film";
+      let søkeord = "mcu";
+      for(let film of filmar)
+      {
+          if(film["dato"] > no)
+          {
+              targetTime = film["dato"];
+              filmTittel = film["tittel"];
+              søkeord = filmTittel.replaceAll(" ", "%20");;
+              break;
+          }
+      }
+
+      let timeRemaining = targetTime - Date.now();
+     
+      updateCountdown();
+      fyll_gif();
+      
+      var ft = document.getElementById("mcu");
+      ft.innerHTML = filmTittel;
+
+      setInterval(updateCountdown, 1000);
+      setInterval(fyll_gif, (1000*60*2));
+    </script>
+  </body>
+</html>

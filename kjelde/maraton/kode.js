@@ -1,4 +1,4 @@
-const targetTime = new Date("March 18, 2023 09:05:00");  // Set the target time
+const targetTime = new Date("October 08, 2023 09:30:00");  // Set the target time
 let timeRemaining = targetTime - Date.now();  // Calculate the initial time remaining
 setInterval(updateCountdown, 1000);
 setInterval(fyll_gif, (1000*20))
@@ -32,7 +32,7 @@ function updateCountdown() {
 
 async function fyll_gif(){
     const samenlikning = document.getElementById("samenlikning");
-    let gifUrl = await getRandomGif("skiing");
+    let gifUrl = await getRandomGif("running");
     samenlikning.innerHTML = "<img id='gif' src='" + gifUrl + "'>";
 }
 

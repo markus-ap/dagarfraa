@@ -1,13 +1,3 @@
-const targetTime = new Date("March 18, 2023 09:05:00");  // Set the target time
-let timeRemaining = targetTime - Date.now();  // Calculate the initial time remaining
-setInterval(updateCountdown, 1000);
-setInterval(fyll_gif, (1000*20))
-
-window.onload = function(){
-    updateCountdown();
-    fyll_gif();  
-}
-
 function updateCountdown() {
   // Calculate the time remaining
   timeRemaining = targetTime - Date.now();
@@ -16,7 +6,7 @@ function updateCountdown() {
   if (timeRemaining < 0) {
     clearInterval(interval);
     console.log("Countdown complete!");
-    return;
+    return (0,0,0,0);
   }
 
   // Calculate the number of days, hours, minutes, and seconds remaining
@@ -24,15 +14,24 @@ function updateCountdown() {
   const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  
+  formatTimeToHtml(days, hours, minutes, seconds);
+}
 
-  // Display the time remaining
+function formatTimeToHtml(dagar, timar, minutt, sekund){
+  var resultat = "";
+  
+  if(dagar != 0) resultat += (dagar == 1) ? dagar + " dag,</br>" : dagar + " dagar,</br>";
+  resultat += (timar == 1) ? timar + " time,</br>" : timar + " timar,</br>";
+  resultat += minutt + " minutt og,</br>" + sekund + " sekund";
   var p = document.getElementById("tid");
-  p.innerHTML = days + " dagar,</br>" + hours + " timar,</br>" + minutes + " minutt,</br>og " + seconds + " sekund";
+  
+  p.innerHTML = resultat;
 }
 
 async function fyll_gif(){
     const samenlikning = document.getElementById("samenlikning");
-    let gifUrl = await getRandomGif("skiing");
+    let gifUrl = await getRandomGif(søkeord);
     samenlikning.innerHTML = "<img id='gif' src='" + gifUrl + "'>";
 }
 
@@ -56,4 +55,3 @@ async function getRandomGif(searchTerm) {
     // Return the GIF URL
     return data.data.images.original.url;
 }
-  

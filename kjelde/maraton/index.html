@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dagarfrå.no</title>
+    <title>Nedtelling til Royal Parks Half Marathon 2023</title>
     <script src="kode.js"></script>
     <link rel="stylesheet" href="stilark.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,22 +12,10 @@
   </head>
   <body>
     <div id="kropp">
-        <p> Om </p>
-        <h1 id="tid">Kor mange dagar frå no er det?</h1>
-        <p> er det eitt nytt år! </p>
+        <p>Om </p>
+        <h1 id="tid"></h1>
+        <p>skal Helen springe Royal Parks Half Marathon 🏃‍♀️</p>
         <p id="samenlikning"></p>
     </div>
-    <script>
-      const no = new Date();
-      let år = no.getFullYear() + 1;
-      const targetTime = new Date(`January 1, ${år} 00:00:00`);
-      
-      let timeRemaining = targetTime - Date.now();
-      let søkeord = "fireworks";
-      updateCountdown();
-      fyll_gif();
-      setInterval(updateCountdown, 1000);
-      setInterval(fyll_gif, (1000*20));
-    </script>
   </body>
 </html>
