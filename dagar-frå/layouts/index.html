@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dagar frå no</title>
+  </head>
+  <body>
+    <h1>Kor mange dagar frå no er det?</h1>
+    <p>Dette er ei side du egenleg aldri skal sjå.</p>
+    {{ range .Site.RegularPages }}
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Summary }}</p>
+    {{ end }}
+  </body>
+</html>

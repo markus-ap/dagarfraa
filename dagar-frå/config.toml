@@ -1,0 +1,8 @@
+baseURL = "https://xn--dagarfr-kxa.no/"
+languageCode = 'no-nn'
+title = 'Dagar frå no'
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[directories]
+partialsDir = "delvise"
+layoutsDir = "formar"
