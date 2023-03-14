@@ -1,0 +1,34 @@
+[
+    {
+        "tittel": "Birken",
+        "filnamn": "birken",
+        "skildring": "skal Ingunn og Helen gå Birken! 🎿",
+        "måltid": "March 18 2023 09:05:00",
+        "gif_søkeord": "skiing",
+        "farge": "maroon"
+    },
+    {
+        "tittel": "Bursdag",
+        "filnamn": "bursdag",
+        "skildring": "har Markus bursdag!",
+        "måltid": "December 25 2023 08:50:00",
+        "gif_søkeord": "birthday",
+        "farge": "green"
+    },
+    {
+        "tittel": "Interrail",
+        "filnamn": "interrail",
+        "skildring": "skal Mingus på interrail!",
+        "måltid": "December 25 2023 08:50:00",
+        "gif_søkeord": "railway",
+        "farge": "#CC7722"
+    },
+    {
+        "tittel": "Eurovision",
+        "filnamn": "esc",
+        "skildring": "til finalen i Eurovision!",
+        "måltid": "December 25 2023 08:50:00",
+        "gif_søkeord": "eurovision",
+        "farge": "#714691"
+    }
+]
