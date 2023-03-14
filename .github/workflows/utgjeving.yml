@@ -5,6 +5,7 @@ on:
     paths:
       - 'generert/**'
       - '.github/workflow/**'
+  workflow_dispatch:
 
 name: 
 jobs:
