@@ -26,6 +26,12 @@ jobs:
     
     - name: 🏗 Bygg vevsidar
       run: python automatisk/hovud.py
+
+    - name: Kopier hovudfilar
+      run: |
+        cp kjelde/index.html generert/index.html
+        cp kjelde/kode.js generert/kode.js
+        cp kjelde/stilark.css generert/stilark.css
     
     - name: Commit and push changes
       run: |
