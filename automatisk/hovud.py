@@ -11,12 +11,12 @@ def bygg():
 
     shutil.rmtree("generert")
     os.mkdir("generert")
-
+    os.mkdir("generert/til")
     for side in sidar():
         html = mal.render(side)
         mappe = os.getcwd()
-        os.mkdir(f"generert/{side['filnamn']}")
-        open(f"{mappe}/generert/{side['filnamn']}/index.html", "w", encoding="utf8").write(html)
+        os.mkdir(f"generert/til/{side['filnamn']}")
+        open(f"{mappe}/generert/til/{side['filnamn']}/index.html", "w", encoding="utf8").write(html)
 
 if __name__ == "__main__":
     bygg()
