@@ -3,7 +3,7 @@ on:
     branches:
       - hovud
     paths:
-      - 'kjelde/**'
+      - 'generert/**'
       - '.github/workflow/**'
 
 name: 
@@ -15,6 +15,25 @@ jobs:
     - name: 🚚 Last ned koda
       uses: actions/checkout@v3
     
+    - name: 🐍 Sett opp python
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.x"
+    
+    - name: 📰 Installér krav
+      run: pip install krav.txt
+    
+    - name: 🏗 Bygg vevsidar
+      run: python malar/hovud.py
+    
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "action@github.com"
+        git add .
+        git commit -m "Autogenererte sidar"
+        git push
+    
     - name: 📂 Synkronisér filar
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
@@ -22,6 +41,6 @@ jobs:
         username: dagarfra
         password: ${{ secrets.ftp_passord }}
         server-dir: www/
-        local-dir: ./kjelde/
+        local-dir: ./generert/
         port: 21
         dangerous-clean-slate: true
