@@ -27,8 +27,16 @@
         "tittel": "Eurovision",
         "filnamn": "esc",
         "skildring": "til finalen i Eurovision!",
-        "måltid": "December 25 2023 08:50:00",
+        "måltid": "13 May 2023 18:00",
         "gif_søkeord": "eurovision",
         "farge": "#714691"
+    },
+    {
+        "tittel": "Påske",
+        "filnamn": "påske",
+        "skildring": "er det påske!",
+        "måltid": "1 April 2023 09:00",
+        "gif_søkeord": "easter",
+        "farge": "yellow"
     }
 ]
