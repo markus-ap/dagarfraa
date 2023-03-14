@@ -5,7 +5,7 @@ on:
     paths:
       - 'generert/**'
       - '.github/workflows/**'
-      - 'sidar.json'
+      - 'automatisk/sidar.json'
   workflow_dispatch:
 
 name: 
