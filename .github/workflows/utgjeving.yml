@@ -6,6 +6,7 @@ on:
       - 'generert/**'
       - '.github/workflows/**'
       - 'automatisk/sidar.json'
+      - 'malar/**'
   workflow_dispatch:
 
 name: 
