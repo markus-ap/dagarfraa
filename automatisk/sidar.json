@@ -26,7 +26,7 @@
     {
         "tittel": "Eurovision",
         "filnamn": "esc",
-        "skildring": "til finalen i Eurovision!",
+        "skildring": "er det finale i Eurovision!",
         "måltid": "13 May 2023 18:00",
         "gif_søkeord": "eurovision",
         "farge": "#714691"
@@ -40,11 +40,19 @@
         "farge": "yellow"
     },
     {
-        "tittel": "Førti",
-        "filnamn": "førti",
-        "skildring": "er Ingunn 40 år!",
-        "måltid": "4 August 2031 12:04",
-        "gif_søkeord": "forty",
-        "farge": "red"
+        "tittel": "Disneyland",
+        "filnamn": "disneyland",
+        "skildring": "skal Mingus til Disneyland!",
+        "måltid": "6 July 2023 10:00",
+        "gif_søkeord": "disneyland",
+        "farge": "purple"
+    },
+    {
+        "tittel": "Guardians of the Galaxy Vol. 3",
+        "filnamn": "gotg",
+        "skildring": "er det premiere på Guardians of the Galaxy Vol. 3!",
+        "måltid": "May 5 2023",
+        "gif_søkeord": "groot",
+        "farge": "brown"
     }
 ]
