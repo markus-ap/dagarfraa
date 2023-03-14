@@ -25,7 +25,7 @@ jobs:
       run: pip install -r krav.txt
     
     - name: 🏗 Bygg vevsidar
-      run: python malar/hovud.py
+      run: python automatisk/hovud.py
     
     - name: Commit and push changes
       run: |
