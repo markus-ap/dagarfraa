@@ -34,14 +34,6 @@ jobs:
         cp kjelde/kode.js generert/kode.js
         cp kjelde/stilark.css generert/stilark.css
     
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "GitHub Actions Bot"
-        git config --global user.email "action@github.com"
-        git add .
-        git commit -m "Autogenererte sidar"
-        git push
-    
     - name: 📂 Synkronisér filar
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:

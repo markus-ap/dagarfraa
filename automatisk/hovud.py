@@ -9,14 +9,17 @@ def bygg():
     miljø = Miljø(loader=Filinnlastar("automatisk/malar"))
     mal = miljø.get_template("hovud_mal.html")
 
-    shutil.rmtree("generert")
-    os.mkdir("generert")
-    os.mkdir("generert/til")
+    if os.path.isdir("generert"):
+        shutil.rmtree("generert")
+    
     for side in sidar():
         html = mal.render(side)
         mappe = os.getcwd()
-        os.mkdir(f"generert/til/{side['filnamn']}")
-        open(f"{mappe}/generert/til/{side['filnamn']}/index.html", "w", encoding="utf8").write(html)
+
+        filnamn_unicode = side["filnamn"].encode("utf-8").decode("utf-8")
+
+        os.makedirs(f"generert/til/{filnamn_unicode}", exist_ok=True)
+        open(f"{mappe}/generert/til/{filnamn_unicode}/index.html", "w", encoding="utf8").write(html)
 
 if __name__ == "__main__":
     bygg()
