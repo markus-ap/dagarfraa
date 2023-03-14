@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birken</title>
+    <title>Eurovision</title>
     <script src="https://dagarfrå.no/kode.js"></script>
     <link rel="stylesheet" href="https://dagarfrå.no/stilark.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   </head>
-  <style>* { background-color: maroon; }</style>
+  <style>* { background-color: #714691; }</style>
   <body>
     <div id="kropp">
         <p> Om </p>
         <h1 id="tid"></h1>
-        <p> skal Ingunn og Helen gå Birken! 🎿 </p>
+        <p> til finalen i Eurovision! </p>
         <p id="samenlikning"></p>
     </div>
     <script>
       const no = new Date();
-      const targetTime = new Date(`March 18 2023 09:05:00`);
+      const targetTime = new Date(`December 25 2023 08:50:00`);
       
       let timeRemaining = targetTime - Date.now();
-      let søkeord = 'skiing';
+      let søkeord = 'eurovision';
       updateCountdown();
       fyll_gif();
       setInterval(updateCountdown, 1000);
