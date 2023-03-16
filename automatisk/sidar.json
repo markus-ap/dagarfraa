@@ -54,5 +54,13 @@
         "måltid": "May 5 2023",
         "gif_søkeord": "groot",
         "farge": "brown"
-    }
+    },
+    {
+        "tittel": "Fortida",
+        "filnamn": "fortida",
+        "skildring": "er me tilbake i tid",
+        "måltid": "January 1 2023",
+        "gif_søkeord": "timemachine",
+        "farge": "black"
+    }   
 ]
