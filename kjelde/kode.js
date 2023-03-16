@@ -1,5 +1,10 @@
 function updateCountdown() {
   // Calculate the time remaining
+  if(targetTime < Date.now())
+  {
+      formatTimeToHtml(0,0,0,0);
+      return;
+  }
   timeRemaining = targetTime - Date.now();
 
   // If the countdown is complete, stop the interval and display a message
@@ -25,7 +30,14 @@ function formatTimeToHtml(dagar, timar, minutt, sekund){
   resultat += (timar == 1) ? timar + " time,</br>" : timar + " timar,</br>";
   resultat += minutt + " minutt og,</br>" + sekund + " sekund";
   var p = document.getElementById("tid");
-  
+ 
+  if(dagar == 0 && timar == 0 && minutt == 0 && sekund == 0)
+  {
+    var kropp = document.getElementById("kropp");
+    kropp.innerHTML = "DET HAR SKJEDD! 😱";
+    return;
+  }
+
   p.innerHTML = resultat;
 }
 
