@@ -27,7 +27,7 @@
     <div id="kropp">
         <p> Om </p>
         <h1 id="tid"></h1>
-        <p> {{ hending.skildring }} </p>
+        <p id="skildring"> {{ hending.skildring }} </p>
         <p id="samenlikning"></p>
     </div>
     <script>
@@ -55,6 +55,7 @@
               nytt.filnamn = side.filnamn;
               nytt.skjedd = side.skjedd;
               side = nytt;
+              document.getElementById("skildring").innerHTML = side.skildring;
               break;
           }
       }
