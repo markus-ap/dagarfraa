@@ -34,12 +34,38 @@
       const no = new Date();
       const targetTime = new Date(`{{ måltid }}`);
       
+      if({{ løpande }})
+      {
+        if(no.getMonth() == targetTime.getMonth() && no.getDate() > targetTime.getDate())
+        {
+            år = no.getFullYear() + 1;
+        }
+        else{
+            år = no.getFullYear()
+        }
+        
+        targetTime.setFullYear(år);
+      }
+      
       let timeRemaining = targetTime - Date.now();
-      let søkeord = '{{ gif_søkeord }}';
-      updateCountdown();
-      fyll_gif();
-      setInterval(updateCountdown, 1000);
-      setInterval(fyll_gif, (1000*60*2));
+      
+      let kropp = document.getElementById("kropp");
+      if(timeRemaining > 0 && targetTime.toDateString() === no.toDateString())
+      {
+        kropp.innerHTML = '{{ idag }}'
+      }
+      else if(timeRemaining < 0)
+      {
+        kropp.innerHTML = '{{ skjedd }}'
+      }
+      else
+      {
+        let søkeord = '{{ gif_søkeord }}';
+        updateCountdown();
+        fyll_gif();
+        setInterval(updateCountdown, 1000);
+        setInterval(fyll_gif, (1000*60*2));
+      }
     </script>
   </body>
 </html>

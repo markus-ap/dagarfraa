@@ -5,7 +5,10 @@
         "skildring": "skal Mingus gå Birken! 🎿",
         "måltid": "March 13 2027 09:30:00",
         "gif_søkeord": "skiing",
-        "farge": "maroon"
+        "farge": "maroon",
+        "idag": "I dag går / gjekk Mingus Birken 😱",
+        "skjedd": "Mingus har gått Birken! 🥳",
+        "løpande": false
     },
     {
         "tittel": "Bursdag",
@@ -13,7 +16,10 @@
         "skildring": "har Markus bursdag!",
         "måltid": "December 25 2023 08:50:00",
         "gif_søkeord": "birthday",
-        "farge": "green"
+        "farge": "green",
+        "idag": "I dag har Markus bursdag! 🥳",
+        "skjedd": "Markus har no hatt bursdag.",
+        "løpande": true
     },
     {
         "tittel": "Interrail",
@@ -21,7 +27,10 @@
         "skildring": "skal Mingus på interrail!",
         "måltid": "June 29 2023 23:00:00",
         "gif_søkeord": "railway",
-        "farge": "#CC7722"
+        "farge": "#CC7722",
+        "idag": "I dag dro Mingus på interrail! 🚂",
+        "skjedd": "Mingus har dratt på interrail! 🥳🥳🥳",
+        "løpande": false
     },
     {
         "tittel": "Eurovision",
@@ -29,7 +38,10 @@
         "skildring": "er det finale i Eurovision!",
         "måltid": "13 May 2023 18:00",
         "gif_søkeord": "eurovision",
-        "farge": "#714691"
+        "farge": "#714691",
+        "idag": "Det er Eurovision! 🎆",
+        "skjedd": "Eurovision har skjedd.",
+        "løpande": false
     },
     {
         "tittel": "Påske",
@@ -37,7 +49,10 @@
         "skildring": "er det påske!",
         "måltid": "1 April 2023 09:00",
         "gif_søkeord": "easter",
-        "farge": "yellow"
+        "farge": "yellow",
+        "idag": "I dag er det påske! 🍫",
+        "skjedd": "Påsken starta!",
+        "løpande": false
     },
     {
         "tittel": "Disneyland",
@@ -45,7 +60,10 @@
         "skildring": "skal Mingus til Disneyland!",
         "måltid": "6 July 2023 10:00",
         "gif_søkeord": "disneyland",
-        "farge": "purple"
+        "farge": "purple",
+        "idag": "I dag er Mingus i Disneyland 🏰",
+        "skjedd": "Mingus er ikkje lengre i Disneyland 😭",
+        "løpande": false
     },
     {
         "tittel": "Guardians of the Galaxy Vol. 3",
@@ -53,7 +71,10 @@
         "skildring": "er det premiere på Guardians of the Galaxy Vol. 3!",
         "måltid": "May 5 2023",
         "gif_søkeord": "groot",
-        "farge": "brown"
+        "farge": "brown",
+        "idag": "I dag er det premiere på Guardians of the Galaxy Vol. 3!",
+        "skjedd": "Premiera på Guardians of the Galaxy Vol. 3 har skjedd",
+        "løpande": false
     },
     {
         "tittel": "Fortida",
@@ -61,7 +82,10 @@
         "skildring": "er me tilbake i tid",
         "måltid": "January 1 2023",
         "gif_søkeord": "timemachine",
-        "farge": "black"
+        "farge": "black",
+        "idag": "Det er ikkje fortida i dag.",
+        "skjedd": "Fortida har skjedd!",
+        "løpande": false
     },
     {
         "tittel": "Maraton",
@@ -69,6 +93,8 @@
         "skildring": "skal Helen springe Royal Parks Half Marathon 🏃‍♀️",
         "måltid": "October 08, 2023 09:30:00",
         "gif_søkeord": "marathon",
-        "farge": "olive"
+        "farge": "olive",
+        "idag": "I dag spring Helen maraton! 🏃‍♀️💨",
+        "skjedd": "Helen har sprunget maraton 😮‍💨"
     }   
 ]
