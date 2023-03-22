@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   </head>
-  <style>
+  <style id="lokal-stil">
     #heim{
       padding: 1rem;
     }
@@ -61,9 +61,7 @@
       }
       {% endif %}
 
-      const stilBlokk = document.createElement("style");
-      stilBlokk.innerHTML = `* { background-color: ${side.farge}; }`;
-      document.head.appendChild(stilBlokk);
+      document.getElementById("lokal-stil").innerHTML += `* { background-color: ${side.farge}; }`;
 
       targetTime = new Date(side.måltid);
       søkeord = side.gif_søkeord;
