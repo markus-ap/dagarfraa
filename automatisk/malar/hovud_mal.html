@@ -33,6 +33,7 @@
     <script>
       const no = new Date();
       const targetTime = new Date(`{{ måltid }}`);
+      let søkeord = '{{ gif_søkeord }}';
       
       {% if løpande %} 
         if(no.getMonth() == targetTime.getMonth() && no.getDate() > targetTime.getDate())
@@ -59,7 +60,6 @@
       }
       else
       {
-        let søkeord = '{{ gif_søkeord }}';
         updateCountdown();
         fyll_gif();
         setInterval(updateCountdown, 1000);
