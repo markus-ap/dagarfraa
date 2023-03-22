@@ -3,10 +3,9 @@ on:
     branches:
       - hovud
     paths:
-      - 'generert/**'
-      - '.github/workflows/**'
-      - 'automatisk/sidar.json'
-      - 'malar/**'
+      - 'generert/'
+      - '.github/'
+      - 'automatisk/'
   workflow_dispatch:
 
 name: 
