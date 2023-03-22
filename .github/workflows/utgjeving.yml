@@ -2,10 +2,6 @@ on:
   push:
     branches:
       - hovud
-    paths:
-      - 'generert/'
-      - '.github/'
-      - 'automatisk/'
   workflow_dispatch:
 
 name: 
