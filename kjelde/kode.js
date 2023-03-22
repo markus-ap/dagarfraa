@@ -24,19 +24,12 @@ function updateCountdown() {
 }
 
 function formatTimeToHtml(dagar, timar, minutt, sekund){
-  var resultat = "";
+  let resultat = "";
   
   if(dagar != 0) resultat += (dagar == 1) ? dagar + " dag,</br>" : dagar + " dagar,</br>";
   resultat += (timar == 1) ? timar + " time,</br>" : timar + " timar,</br>";
   resultat += minutt + " minutt og,</br>" + sekund + " sekund";
-  var p = document.getElementById("tid");
- 
-  if(dagar == 0 && timar == 0 && minutt == 0 && sekund == 0)
-  {
-    var kropp = document.getElementById("kropp");
-    kropp.innerHTML = "DET HAR SKJEDD! 😱";
-    return;
-  }
+  let p = document.getElementById("tid");
 
   p.innerHTML = resultat;
 }
