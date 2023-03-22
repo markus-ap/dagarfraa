@@ -61,7 +61,8 @@
       }
       {% endif %}
 
-      document.getElementById("lokal-stil").innerHTML += `* { background-color: ${side.farge}; }`;
+      document.getElementById("lokal-stil").innerHTML += `* { background-color: "${side.farge}"; }`;
+      document.title = side.tittel;
 
       targetTime = new Date(side.måltid);
       søkeord = side.gif_søkeord;
