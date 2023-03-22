@@ -34,7 +34,7 @@
       const no = new Date();
       const targetTime = new Date(`{{ måltid }}`);
       
-      if({{ løpande }})
+      if({{ løpande if løpande is not none else 'false' }})
       {
         if(no.getMonth() == targetTime.getMonth() && no.getDate() > targetTime.getDate())
         {
