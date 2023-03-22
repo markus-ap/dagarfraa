@@ -111,5 +111,15 @@
         "farge": "olive",
         "idag": "I dag spring Helen maraton! 🏃‍♀️💨",
         "skjedd": "Helen har sprunget maraton 😮‍💨"
-    }   
+    }   ,
+    {
+        "tittel": "Gipsen skal av!",
+        "filnamn": "gispen-går-av",
+        "skildring": "skal Markus ta av gipsen 🤞",
+        "måltid": "April 17, 2023 11:00:00",
+        "gif_søkeord": "wrist",
+        "farge": "blue",
+        "idag": "I dag tek Markus av gipsen!",
+        "skjedd": "Markus har tatt av gipsen."
+    } 
 ]
