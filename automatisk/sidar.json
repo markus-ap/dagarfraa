@@ -7,8 +7,7 @@
         "gif_søkeord": "skiing",
         "farge": "maroon",
         "idag": "I dag går / gjekk Mingus Birken 😱",
-        "skjedd": "Mingus har gått Birken! 🥳",
-        "løpande": false
+        "skjedd": "Mingus har gått Birken! 🥳"
     },
     {
         "tittel": "Bursdag",
@@ -19,7 +18,8 @@
         "farge": "green",
         "idag": "I dag har Markus bursdag! 🥳",
         "skjedd": "Markus har no hatt bursdag.",
-        "løpande": true
+        "løpande": true,
+        "stil": "// Gler meg til bursdag 🎉"
     },
     {
         "tittel": "Interrail",
@@ -29,8 +29,7 @@
         "gif_søkeord": "railway",
         "farge": "#CC7722",
         "idag": "I dag dro Mingus på interrail! 🚂",
-        "skjedd": "Mingus har dratt på interrail! 🥳🥳🥳",
-        "løpande": false
+        "skjedd": "Mingus har dratt på interrail! 🥳🥳🥳"
     },
     {
         "tittel": "Eurovision",
@@ -40,8 +39,7 @@
         "gif_søkeord": "eurovision",
         "farge": "#714691",
         "idag": "Det er Eurovision! 🎆",
-        "skjedd": "Eurovision har skjedd.",
-        "løpande": false
+        "skjedd": "Eurovision har skjedd."
     },
     {
         "tittel": "Påske",
@@ -51,8 +49,7 @@
         "gif_søkeord": "easter",
         "farge": "yellow",
         "idag": "I dag er det påske! 🍫",
-        "skjedd": "Påsken starta!",
-        "løpande": false
+        "skjedd": "Påsken starta!"
     },
     {
         "tittel": "Disneyland",
@@ -62,8 +59,28 @@
         "gif_søkeord": "disneyland",
         "farge": "purple",
         "idag": "I dag er Mingus i Disneyland 🏰",
-        "skjedd": "Mingus er ikkje lengre i Disneyland 😭",
-        "løpande": false
+        "skjedd": "Mingus er ikkje lengre i Disneyland 😭"
+    },
+    {
+        "tittel": "Marvel Cinematic Universe",
+        "filnamn": "mcu",
+        "skjedd": "Dette burde du ikkje sjå...",
+        "fleire":[
+            {
+                "skildring": "er det premiere på Guardians of the Galaxy Vol. 3!",
+                "måltid": "May 5 2023",
+                "gif_søkeord": "groot",
+                "farge": "brown",
+                "idag": "I dag er det premiere på Guardians of the Galaxy Vol. 3!"
+            },
+            {
+                "skildring": "er det premiere på The Marvels!",
+                "måltid": "November 10 2023",
+                "gif_søkeord": "marvel",
+                "farge": "navy",
+                "idag": "I dag er det premiere på The Marvels!"
+            }
+        ]
     },
     {
         "tittel": "Guardians of the Galaxy Vol. 3",
@@ -73,8 +90,7 @@
         "gif_søkeord": "groot",
         "farge": "brown",
         "idag": "I dag er det premiere på Guardians of the Galaxy Vol. 3!",
-        "skjedd": "Premiera på Guardians of the Galaxy Vol. 3 har skjedd",
-        "løpande": false
+        "skjedd": "Premiera på Guardians of the Galaxy Vol. 3 har skjedd"
     },
     {
         "tittel": "Fortida",
@@ -84,8 +100,7 @@
         "gif_søkeord": "timemachine",
         "farge": "black",
         "idag": "Det er ikkje fortida i dag.",
-        "skjedd": "Fortida har skjedd!",
-        "løpande": false
+        "skjedd": "Fortida har skjedd!"
     },
     {
         "tittel": "Maraton",

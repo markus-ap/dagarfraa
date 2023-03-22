@@ -11,9 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   </head>
   <style>
-    * { 
-      background-color: {{ farge }}; 
-    }
     #heim{
       padding: 1rem;
     }
@@ -21,42 +18,77 @@
       color: white;
       text-decoration: none;
     }
+    {% if hending.stil %}
+    {{ hending.stil }}
+    {% endif %}
   </style>
   <body>
     <p id="heim"><a href="https://dagarfrå.no">Heim</a></p>
     <div id="kropp">
         <p> Om </p>
         <h1 id="tid"></h1>
-        <p> {{ skildring }} </p>
+        <p> {{ hending.skildring }} </p>
         <p id="samenlikning"></p>
     </div>
     <script>
+      let side = {{ hending }};
       const no = new Date();
-      const targetTime = new Date(`{{ måltid }}`);
-      let søkeord = '{{ gif_søkeord }}';
-      
-      {% if løpande %} 
-        if(no.getMonth() == targetTime.getMonth() && no.getDate() > targetTime.getDate())
-        {
-            år = no.getFullYear() + 1;
-        }
-        else{
-            år = no.getFullYear()
-        }
-        
-        targetTime.setFullYear(år);      
+      let targetTime = new Date();
+      let søkeord = "shrug";
+
+      {% if hending.fleire %}
+      let fleire = {{ hending.fleire }};
+
+      fleire.sort((a, b) => 
+      {
+        const dateA = new Date(a.måltid);
+        const dateB = new Date(b.måltid);
+        return dateA - dateB;
+      });
+
+      for(let s of fleire)
+      {
+          if(new Date(s["måltid"]) > no)
+          {
+              let nytt = s;
+              nytt.tittel = side.tittel;
+              nytt.filnamn = side.filnamn;
+              nytt.skjedd = side.skjedd;
+              side = nytt;
+              break;
+          }
+      }
       {% endif %}
+
+      const stilBlokk = document.createElement("style");
+      stilBlokk.innerHTML = `* { background-color: ${side.farge}; }`;
+      document.head.appendChild(styleElement);
+
+      targetTime = new Date(side.måltid);
+      søkeord = side.gif_søkeord;
       
+      {% if hending.løpande %} 
+      if(no.getMonth() == targetTime.getMonth() && no.getDate() > targetTime.getDate())
+      {
+          år = no.getFullYear() + 1;
+      }
+      else{
+          år = no.getFullYear()
+      }
+      
+      targetTime.setFullYear(år);   
+      {% endif %}
+
       let timeRemaining = targetTime - Date.now();
       
       let kropp = document.getElementById("kropp");
       if(timeRemaining > 0 && targetTime.toDateString() === no.toDateString())
       {
-        kropp.innerHTML = '{{ idag }}'
+        kropp.innerHTML = side.idag;
       }
       else if(timeRemaining < 0)
       {
-        kropp.innerHTML = '{{ skjedd }}'
+        kropp.innerHTML = side.skjedd;
       }
       else
       {

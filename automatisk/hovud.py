@@ -13,7 +13,7 @@ def bygg():
         shutil.rmtree("generert")
     
     for side in sidar():
-        html = mal.render(side)
+        html = mal.render(hending=side)
         mappe = os.getcwd()
 
         filnamn_unicode = side["filnamn"].encode("utf-8").decode("utf-8")
